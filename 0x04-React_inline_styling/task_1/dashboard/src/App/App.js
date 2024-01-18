@@ -47,7 +47,7 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className={css(styles.App)}>
+        <div className={css(Styles.App)}>
           <div className="heading-section">
             <Notifications listNotifications={this.listNotifications} />
             <Header />
@@ -74,14 +74,17 @@ class App extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  App: {
-    height: "100vh",
-    maxWidth: "100vw",
-    position: "relative",
-    fontFamily: "Arial, Helvetica, sans-serif",
-  },
-});
+
+const Styles = StyleSheet.create(
+  {
+    App: {
+      height: "100vh",
+      maxWidth: "100vw",
+      position: "relative",
+      fontFamily: "Arial, Helvetica, sans-serif"
+    },
+  }
+);
 
 App.defaultProps = {
   isLoggedIn: false,
