@@ -17,4 +17,8 @@
   "dependencies": {
     "immutable": "^4.0.0-rc.12"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d8243aa0850e17c0ae5137857c8c1c6c39f28a7a
