@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
+import uiReducer, { initialState } from ".reducers/uiReducer";
 import App from "./App/App";
-import uiReducer, { initialState } from "./reducers/uiReducer";
 import { Map } from "immutable";
 
-const store = createStore(uiReducer, Map(initialState), applyMiddleware(thunk));
+const store = createStore(uiReducer, Map(initialStatee), applyMiddleware);
 
 ReactDOM.render(
   <React.StrictMode>
