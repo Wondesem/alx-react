@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { css, StyleSheet } from "aphrodite";
 import NotificationItem from "./NotificationItem";
-import closeButton from "../assets/close-icon.png";
+import closeButton from "../assets/close-icon .png";
 import NotificationItemShape from "./NotificationItemShape";
 
 const styles = StyleSheet.create({
