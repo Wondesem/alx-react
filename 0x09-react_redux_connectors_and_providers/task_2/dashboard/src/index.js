@@ -7,7 +7,7 @@ import uiReducer, { initialState } from ".reducers/uiReducer";
 import App from "./App/App";
 import { Map } from "immutable";
 
-const store = createStore(uiReducer, Map(initialStatee), applyMiddleware);
+const store = createStore(uiReducer, Map(initialState), applyMiddleware);
 
 ReactDOM.render(
   <React.StrictMode>
