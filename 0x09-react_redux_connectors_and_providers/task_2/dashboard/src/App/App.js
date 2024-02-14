@@ -30,8 +30,7 @@ export const listNotificationsInitialState = [
   { id: 2, type: "urgent", value: "New resume available" },
   { id: 3, type: "urgent", html: { __html: getLatestNotification() } },
 ];
-
-if( typeof document !== "undefined")
+if (typeof document !== "undefined")
 {document.body.style.margin = 0;}
 
 export class App extends Component {
@@ -61,13 +60,13 @@ export class App extends Component {
   }
 
   componentDidMount() {
-    if( typeof document !== "undefined")
+    if(typeof document !== "undefined")
     {document.addEventListener("keydown", this.handleKeyCombination);}
   }
 
   componentWillUnmount() {
     if(typeof document !== "undefined")
-   { document.removeEventListener("keydown", this.handleKeyCombination);}
+    {document.removeEventListener("keydown", this.handleKeyCombination);}
   }
 
   render() {
