@@ -1,4 +1,4 @@
-import * as notificationsData from '../../../../../../Downloads/Compressed/alx-react-main/0x08-react_redux_reducer_selector/task_0/dashboard/notifications.json';
+import * as notificationsData from '../../notifications.json';
 import { normalize, schema } from 'normalizr';
 
 export const getAllNotificationsByUser = (userId) => {

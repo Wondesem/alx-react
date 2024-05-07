@@ -44,7 +44,7 @@ class Login extends Component {
     return (
       <main role='main' className={css(styles.login)}>
         <p>Login to access the full dashboard</p>
-        <form action='' onSubmit={this.handleLoginSubmit}>
+        <form action='' onSubmit={()=>this.handleLoginSubmit}>
           <label htmlFor='email'>Email:</label>
           <input
             type='email'
