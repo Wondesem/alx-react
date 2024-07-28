@@ -11,18 +11,16 @@ const App = () => {
         <h1>School dashboard</h1>
       </div>
       <div className="App-body">
-        <p>
-          Login to access the full
-        </p>
+        <p>Login to access the full</p>
         <label htmlFor="email">Email:</label>
-          <input type="email" id="email" placeholder="Enter your email" />
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Enter your password"
-          />
-          <button type="submit">Ok</button>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <label htmlFor="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <button type="submit">Ok</button>
       </div>
       <div className="App-footer">
         <p>
