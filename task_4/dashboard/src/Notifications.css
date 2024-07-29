@@ -1,0 +1,13 @@
+.notifications {
+    margin: 16px;
+    border: 2px dashed #eb5a00;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+li[data-priority='defualt'] {
+    color: #06063ddf;
+}
+li[data-priority='urgent'] {
+    color: #ee003ff1;
+}
