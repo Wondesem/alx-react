@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Wondesem.github.io/alx-react/tree/main/0x01-react_intro/task_4/dashboard",
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gp-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "@cfaester/enzyme-adapter-react-18": "^0.8.0"
+    "@cfaester/enzyme-adapter-react-18": "^0.8.0",
+    "gh-pages": "^6.1.1"
   }
 }
