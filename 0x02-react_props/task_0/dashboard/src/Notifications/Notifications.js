@@ -1,26 +1,21 @@
 import React from "react";
-import "./Notifications.css";
-import closeIcon from "../assets/close-icon.png";
-import { getLatestNotification } from "../utils/utils";
-
-function Notifications() {
+import'./Notifications.css'
+import closeIcon from '../assets/t_close1437.jpg'
+import {getLatestNotification} from '../Utils/utils'
+const Notifications = () => {
   return (
-    <div className="Notifications">
-      <button
-        style={{ color: "#3a3a3a", fontWeight: "bold", background: "none", border: "none", fontSize: "10px", position: "absolute", right: "2px", top: "2px", cursor: "pointer" }}
-        aria-label="Close"
-        onClick={console.log("Close button has been clicked")}
-      >
-        <img src={closeIcon} alt="closeIcon" width="10px" />
-      </button>
+    <div className="notifications">
       <p>Here is the list of notifications</p>
+      <button onClick={()=>console.log('Close button has been clicked')} style={{float: "right", marginTop: -50, background: "#fff", border: "none", fontSize: 32}} aria-label="close">
+        <img src={closeIcon} alt="close" aria-label="close" width="40"/>
+      </button>
       <ul>
-        <li data="default">New course available</li>
-        <li data="urgent">New resume available</li>
-        <li data="urgent" dangerouslySetInnerHTML={{ __html: getLatestNotification() }}></li>
+        <li data-priority='defualt'>New course available</li>
+        <li data-priority='urgent'>New resume available</li>
+        <li data-priority='urgent' dangerouslySetInnerHTML={{__html: getLatestNotification()}}></li>
       </ul>
     </div>
   );
-}
+};
 
 export default Notifications;
