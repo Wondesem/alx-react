@@ -1,28 +1,11 @@
-
-Curriculum
-Short Specializations
-
-0x02. React props
-Front-end
-JavaScript
-ES6
-React
- By: Johann Kerbrat, Engineering Manager at Uber Works
- Weight: 1
- Project will start Jan 4, 2024 6:00 AM, must end by Jan 9, 2024 6:00 AM
- Manual QA review must be done (request it when you are done with the project)
-
-
 Resources
 Read or watch:
 
 React Official Website
 Getting started with React
-React overview
 React Developer Tools
 Enzyme
 React Fragments
-Typechecking with PropTypes
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -40,6 +23,7 @@ A README.md file, at the root of the folder of the project, is mandatory
 Tasks
 0. Basic components
 mandatory
+Score: 0.0% (Checks completed: 0.0%)
 Start with your files from the last task of the 0x01. React intro project
 
 Instead of creating new elements, we’re going to create components to split the project. The App.js is going to become the main entry point, the shell, for every component in the app.
@@ -91,6 +75,7 @@ File: task_0/dashboard/dist/index.html, task_0/dashboard/src/App/App.js, task_0/
  
 1. Write the tests for each component
 mandatory
+Score: 0.0% (Checks completed: 0.0%)
 To develop your tests faster, you can watch them. The test suite will run for every change you make:
 
 Add the following script to task_1/package.json: "test-watch": "jest --watch"
@@ -130,6 +115,7 @@ File: task_1/package.json, task_1/dashboard/src/Header/Header.test.js, task_1/da
  
 2. Split the Notifications component
 mandatory
+Score: 0.0% (Checks completed: 0.0%)
 2.1. Create a NotificationItem.js
 The Notifications component is repeating the same tags a lot. It will be hard to maintain and reuse. Let’s create a component to support the li generation.
 
@@ -169,6 +155,7 @@ File: task_2/dashboard/src/Notifications/NotificationItem.js, task_2/dashboard/s
  
 3. Checking the application using the React extension
 mandatory
+Score: 0.0% (Checks completed: 0.0%)
 Using the React extension in Chrome:
 
 Modify the type of the first NotificationItem to change from “default” to “urgent”. The first notification should change color to red, take a screenshot
@@ -181,6 +168,7 @@ File: task_3/change_property.png, task_3/profiler.png
  
 4. Props types & Default props & Shapes
 mandatory
+Score: 0.0% (Checks completed: 0.0%)
 To work on this task, install prop-types with npm first
 
 Create a CourseListRow component
@@ -289,6 +277,7 @@ File: task_4/dashboard/src/CourseList/CourseListRow.js, task_4/dashboard/src/Cou
  
 5. Shapes, Loops, and Keys
 mandatory
+Score: 0.0% (Checks completed: 0.0%)
 Create the courses array
 Create a new Shape named CourseShape containing:
 
@@ -351,5 +340,4 @@ Repo:
 GitHub repository: alx-react
 Directory: 0x02-react_props
 File: task_5/dashboard/src/CourseList/CourseShape.js, task_5/dashboard/src/CourseList/CourseList.js, task_5/dashboard/src/CourseList/CourseListRow.js, task_5/dashboard/src/App/App.js, task_5/dashboard/src/Notifications/NotificationItemShape.js, task_5/dashboard/src/Notifications/Notifications.js, task_5/dashboard/src/Notifications/NotificationItem.test.js, task_5/dashboard/src/CourseList/CourseList.test.js
-
-
+ 

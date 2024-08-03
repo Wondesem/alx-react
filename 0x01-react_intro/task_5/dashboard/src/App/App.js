@@ -1,8 +1,8 @@
 
 import React from "react";
-import logo from "../assets/holberton_logo.png";
+// import logo from "../assets/holberton_logo.png";
 import { getFooterCopy, getFullYear } from "../Utils/utils";
-import "./App.css";
+// import "./App.css";
 
 const App = () => {
   return (
