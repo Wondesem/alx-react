@@ -6,6 +6,7 @@
     "build": "webpack --config=config/webpack.config.prod.js",
     "start": "webpack-dev-server --open --config=config/webpack.config.dev.js",
     "dev": "webpack --config=config/webpack.config.dev.js",
+    "test-watch": "jest --watch",
     "test": "jest"
   },
   "keywords": [],
