@@ -9,7 +9,7 @@ describe("It shall display full year.", ()=>{
 })
 describe('It shall return Holberton School if isIndex true Holberton School main dashboard if false', () => {
   it('should return the correct string based on true/false value', ()=>{
-    expect(getFooterCopy(true)).toBe('Holberton School')
+    expect(getFooterCopy(true)).toBe('Copyright Holberton School')
     expect(getFooterCopy(false)).toBe('Holberton School main dashboard')
   })
 })

@@ -1,7 +1,8 @@
-import Enzyme from 'enzyme';
-import Adapter from '@cfaester/enzyme-adapter-react-18';
-Enzyme.configure({ adapter: new Adapter() });
 
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import Login from '../Login/Login';
+import Notifications from '../Notifications/Notifications';
 import App from './App';
 import { shallow } from 'enzyme';
 
@@ -11,19 +12,24 @@ describe('App tests', () => {
 
 		expect(component).toBeDefined();
 	});
-	it('should render a div with the class App-header', () => {
+	it('should contain Notifications', () => {
 		const component = shallow(<App />);
 
-		expect(component.find('.App-header')).toBeDefined();
+		expect(component.contains(<Notifications/>)).toBe(true);
 	});
-	it('should render a div with the class App-body', () => {
+	it('should contain Header', () => {
 		const component = shallow(<App />);
 
-		expect(component.find('.App-body')).toBeDefined();
+		expect(component.contains(<Header/>)).toBe(true);
 	});
-	it('should render a div with the class App-footer', () => {
+	it('should contain Login', () => {
 		const component = shallow(<App />);
 
-		expect(component.find('.App-footer')).toBeDefined();
+		expect(component.contains(<Login/>)).toBe(true);
+	});
+	it('should contain Footer', () => {
+		const component = shallow(<App />);
+
+		expect(component.contains(<Footer/>)).toBe(true);
 	});
 });
