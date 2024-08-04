@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="App-footer">
         <p>
-          &copy; {getFullYear()} - {getFooterCopy(true)}
+          Copyright {getFullYear()} - {getFooterCopy(true)}
         </p>
       </div>
   )

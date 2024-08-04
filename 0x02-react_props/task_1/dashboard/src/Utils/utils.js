@@ -3,7 +3,7 @@ const getFullYear = () => {
 };
 
 const getFooterCopy = (isIndex = false) =>
-  isIndex ? "Holberton School" : "Holberton School main dashboard";
+  isIndex ? "Copyright Holberton School" : "Holberton School main dashboard";
 
 const getLatestNotification = () => {
   return "<strong>Urgent requirement</strong> - complete by EOD";
