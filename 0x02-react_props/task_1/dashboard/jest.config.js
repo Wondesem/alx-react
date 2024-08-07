@@ -5,6 +5,7 @@ module.exports = {
       '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js',
     },
     "setupFilesAfterEnv": [
-      "<rootDir>/config/setupTest.js"
+      "<rootDir>/config/setupTest.js",
+      "<rootDir>/setup-jest.js"
     ]
   };
