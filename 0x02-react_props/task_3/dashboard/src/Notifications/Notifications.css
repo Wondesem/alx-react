@@ -1,0 +1,14 @@
+.notifications {
+    margin: 16px;
+    border: 2px dashed #eb5a00;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+li[data-notification-type='default'] {
+    color: #06063ddf;
+}
+li[data-urgent],
+li[data-notification-type='urgent'] {
+    color: #eb5a00;
+}
