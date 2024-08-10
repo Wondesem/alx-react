@@ -7,10 +7,11 @@ import NotificationItem from "./NotificationItem";
 const Notifications = ({displayDrawer}) => {
   return (
     <div className="Notifications-container">
-      {displayDrawer ? (<div className="notifications">
+      {displayDrawer ? (<>
         <div className="menuItem">
         <p>Your notifications</p>
       </div>
+        <div className="notifications">
         <button
           onClick={() => console.log("Close button has been clicked")}
           style={{
@@ -29,7 +30,7 @@ const Notifications = ({displayDrawer}) => {
           <NotificationItem type="urgent" value="New resume available" />
           <NotificationItem type="urgent" html={getLatestNotification()} />
         </ul>
-      </div>): <div className="menuItem">
+      </div> </>): <div className="menuItem">
         <p>Your notifications</p>
       </div>}
       </div>
