@@ -1,0 +1,18 @@
+.App-body {
+    margin: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    height: 45%;
+}
+
+#email {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#password {
+    margin-left: 10px;
+}
+button {
+    margin-left: 16px;
+} 
