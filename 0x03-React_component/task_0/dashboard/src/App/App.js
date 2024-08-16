@@ -41,19 +41,19 @@ const listNotifications = [
     id: 3, type: "urgent", html: getLatestNotification()
   }
 ]
-const App = ({ isLoggedIn }) => {
-  return (
+export default class App extends React.Component {
+  render() {return (
     <>
       <div className="App">
         <div className="heading-section">
           <Notifications listNotifications={listNotifications}/>
           <Header />
         </div>
-        {isLoggedIn ? <CourseList listCourses={listCourses}/> : <Login />}
+        {this.props.isLoggedIn ? <CourseList listCourses={listCourses}/> : <Login />}
         <Footer />
       </div>
     </>
-  );
+  );}
 };
 
 App.defaultProps = {
@@ -62,4 +62,3 @@ App.defaultProps = {
 App.propTypes = {
   isLoggedIn: propTypes.bool,
 };
-export default App;
