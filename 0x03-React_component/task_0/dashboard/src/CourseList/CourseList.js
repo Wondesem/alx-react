@@ -1,38 +1,45 @@
-import React from 'react';
-import PropType from 'prop-types';
-import CourseShape from './CourseShape';
-import CourseListRow from './CourseListRow';
-import './CourseList.css';
+import React from "react";
+import CourseListRow from "./CourseListRow";
+import propTypes from 'prop-types'
+import "./CourseList.css";
+import CourseShape from "./CourseShape";
 
-function CourseList({ listCourses }) {
+const CourseList = ({ listCourses }) => {
   return (
-    <table id="CourseList" cellPadding="0" cellSpacing="0">
+    <table id="course-list">
       <thead>
-        <CourseListRow isHeader={true} textFirstCell='Available courses' />
-        <CourseListRow isHeader={true} textFirstCell='Course name' textSecondCell="Credit" />
+        <CourseListRow
+          textFirstCell="Available courses"
+          textSecondCell={null}
+          isHeader={true}
+        />
+        <CourseListRow
+          textFirstCell="Course name"
+          textSecondCell="Credit"
+          isHeader={true}
+        />
       </thead>
       <tbody>
-        {
-        listCourses.length == 0 ?
-          <CourseListRow isHeader={false} textFirstCell='No course available yet'/>
-        : null
-        }
-        {
-          listCourses.map((val, idx) => {
-            return <CourseListRow isHeader={false} textFirstCell={val.name} textSecondCell={val.credit} key={val.id}/>
-          })
-        }
+        {listCourses && listCourses.length > 0 ? (
+          listCourses.map(({ id, name, credit }) => (
+            <CourseListRow
+              key={id}
+              textFirstCell={name}
+              textSecondCell={credit}
+            />
+          ))
+        ) : (
+          <CourseListRow textFirstCell="No course available yet" />
+        )}
       </tbody>
     </table>
   );
+};
+
+CourseList.propTypes = {
+  listCourses: propTypes.arrayOf(CourseShape)
 }
-
 CourseList.defaultProps = {
-  listCourses: []
+  listCourses: [],
 };
-
-CourseList.propType = {
-  listCourses: PropType.arrayOf(CourseShape)
-};
-
 export default CourseList;
