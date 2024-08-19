@@ -1,0 +1,15 @@
+
+*html {
+    box-sizing: border-box;
+}
+.App {
+    height: 100vh;
+    max-width: 100vw;
+}
+.heading-section {
+    border-bottom: 4px solid #e1003c;
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
