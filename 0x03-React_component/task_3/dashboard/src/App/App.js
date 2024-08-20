@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer";
 import CourseList from "../CourseList/CourseList";
 import {getLatestNotification} from '../Utils/utils'
 import BodySection from "../BodySection/BodySection";
+import BodySectionWithMarginBottom from "../BodySection/BodySectionWithMarginBottom";
 
 export default class App extends React.Component {
  
@@ -67,10 +68,10 @@ export default class App extends React.Component {
           <Notifications listNotifications={this.listNotification}/>
           <Header />
         </div>
-        <BodySection title='test'>
-          <p>test</p>
+        {this.props.isLoggedIn ? <BodySectionWithMarginBottom title="Course list"> <CourseList listCourses={this.listCourses}/> </BodySectionWithMarginBottom> : <BodySectionWithMarginBottom title="Log in to continue "><Login /></BodySectionWithMarginBottom> }
+        <BodySection title='News from the School'>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque aliquid sunt, delectus enim, maxime facere quod fuga ratione iure, reiciendis harum illum officia. Laborum laudantium earum qui eos voluptate architecto, consectetur repudiandae sunt dolor, adipisci, expedita vitae soluta facere ipsa accusantium excepturi mollitia sequi dolorum itaque obcaecati perferendis et.</p>
         </BodySection>
-        {this.props.isLoggedIn ? <CourseList listCourses={this.listCourses}/> : <Login />}
         <Footer />
       </div>
     </>
